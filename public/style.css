@@ -1,24 +1,104 @@
-body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+* {
+	margin:0px;
+	padding:0px;
+  font-family: 'Sora', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
-}
-
-.navbar a {
-  color: #aaa;
-  display: inline-block;
+header {
+  background-color: #4E1D02;
+  margin-top: 0;
+  color: white;
+  text-align: center;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
+}
+
+.banniere {
+  background-color: #4E1D02;
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  height: 600px;
+  justify-content: space-around;
+  font-size: 130px;
+  align-items: center;
+}
+
+.banniere img {
+  width: 20%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.menu a {
   text-decoration: none;
+  color: black;
+  font-size: 50px;
+  margin-top: 50px;
 }
 
-.navbar a:hover {
-  color: #ffffff;
+.commander {
+  text-align: center;
+  width: 100%;
 }
 
+.commander a {
+  border: solid;
+  border-color: #4E1D02;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFDBBA;
+  color: #4E1D02;
+  font-weight: bold;
+}
+
+hr {
+  color: #4E1D02;
+  size: 2px;
+  margin-top: 50px;
+}
+
+.contenu {
+  margin-top: 50px;
+}
+
+.quinous {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quinous .texte {
+  width: 30%;
+}
+
+.quinous p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+p {
+  font-size: 20px;
+}
+
+.quinous a {
+  text-decoration: underline;
+  color: black;
+}
+
+.crous {
+  width: 20%;
+}
+
+.crous img {
+  width: 100%;
+}
