@@ -42,6 +42,8 @@ header {
   color: black;
   font-size: 50px;
   margin-top: 50px;
+  width: 500px;
+  text-align: center;
 }
 
 .commander {
@@ -78,7 +80,8 @@ hr {
 }
 
 .quinous .texte {
-  width: 30%;
+  width: 700px;
+  margin-bottom: 30px;
 }
 
 .quinous p {
@@ -96,7 +99,7 @@ p {
 }
 
 .crous {
-  width: 20%;
+  width: 300px;
 }
 
 .crous img {
