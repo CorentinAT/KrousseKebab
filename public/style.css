@@ -1,24 +1,177 @@
-body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+* {
+	margin:0px;
+	padding:0px;
+  font-family: 'Sora', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+::selection {
+  color: #4E1D02;
+  background-color: #FFDBBA;
 }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
+header {
+  text-align: center;
+}
+
+header, footer {
+  background-color: #4E1D02;
+  margin-top: 0;
+  color: white;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
+}
+
+.banniere {
+  background-color: #4E1D02;
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  height: 50%;
+  justify-content: space-around;
+  font-size: 500%;
+  align-items: center;
+}
+
+.banniere img {
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.menu a {
   text-decoration: none;
+  color: black;
+  margin-top: 50px;
+  width: 500px;
+  text-align: center;
 }
 
-.navbar a:hover {
-  color: #ffffff;
+.commander {
+  text-align: center;
+  width: 100%;
 }
 
+.commander a {
+  border: solid;
+  border-color: #4E1D02;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFDBBA;
+  color: #4E1D02;
+  font-weight: bold;
+}
+
+hr {
+  color: #4E1D02;
+  size: 2px;
+  margin-top: 50px;
+}
+
+.contenu {
+  margin-top: 50px;
+}
+
+.quinous {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quinous .texte {
+  width: 700px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.quinous p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+p, li, h3 {
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.quinous a {
+  text-decoration: underline;
+  color: black;
+}
+
+.crous {
+  width: 250px;
+}
+
+.crous img {
+  width: 100%;
+}
+
+.proposition {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.proposition-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 15%;
+  text-align: left;
+}
+
+.menus, .sauces, .boissons {
+  margin-top: 20px;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 700px) {
+  .proposition-contenu {
+    flex-direction: column;
+  }
+  footer div {
+    flex-direction: column;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 701px) {
+  .menus, .sauces, .boissons {
+    width: 30%;
+  }
+  footer div {
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  .menu a {
+    font-size: 50px;
+  }
+}
