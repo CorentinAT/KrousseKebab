@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-header {
+header, footer {
   background-color: #4E1D02;
   margin-top: 0;
   color: white;
@@ -18,16 +18,18 @@ header {
   background-color: #4E1D02;
   margin-top: 2px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   color: white;
-  height: 600px;
+  height: 50%;
   justify-content: space-around;
-  font-size: 130px;
+  font-size: 500%;
   align-items: center;
 }
 
 .banniere img {
   width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .menu {
@@ -89,8 +91,14 @@ hr {
   text-align: justify;
 }
 
-p {
+p, li, h3 {
   font-size: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 24px;
 }
 
 .quinous a {
@@ -99,9 +107,42 @@ p {
 }
 
 .crous {
-  width: 300px;
+  width: 250px;
 }
 
 .crous img {
   width: 100%;
+}
+
+.proposition {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contenu-prop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.proposition h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.menus, .sauces, .boissons {
+  margin-top: 20px;
+  width: 30%;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
