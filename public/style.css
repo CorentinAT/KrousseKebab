@@ -5,11 +5,19 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  color: #4E1D02;
+  background-color: #FFDBBA;
+}
+
+header {
+  text-align: center;
+}
+
 header, footer {
   background-color: #4E1D02;
   margin-top: 0;
   color: white;
-  text-align: center;
   font-size: 15px;
   padding: 5px;
 }
@@ -42,7 +50,6 @@ header, footer {
 .menu a {
   text-decoration: none;
   color: black;
-  font-size: 50px;
   margin-top: 50px;
   width: 500px;
   text-align: center;
@@ -84,6 +91,8 @@ hr {
 .quinous .texte {
   width: 700px;
   margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .quinous p {
@@ -117,32 +126,52 @@ h3 {
 .proposition {
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
-.contenu-prop {
+.proposition-contenu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.proposition h2 {
-  width: 100%;
-  text-align: center;
+  margin-left: 15%;
+  text-align: left;
 }
 
 .menus, .sauces, .boissons {
   margin-top: 20px;
-  width: 30%;
 }
 
 footer div {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media (max-width: 700px) {
+  .proposition-contenu {
+    flex-direction: column;
+  }
+  footer div {
+    flex-direction: column;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 701px) {
+  .menus, .sauces, .boissons {
+    width: 30%;
+  }
+  footer div {
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  .menu a {
+    font-size: 50px;
+  }
 }
