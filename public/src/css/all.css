@@ -1,0 +1,45 @@
+* {
+  margin:0px;
+  padding:0px;
+  font-family: 'Sora', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #4E1D02;
+  background-color: #FFDBBA;
+}
+
+header {
+  text-align: center;
+}
+
+header, footer {
+  background-color: #4E1D02;
+  margin-top: 0;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 700px) {
+  footer div {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 701px) {
+  footer div {
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    text-align: center;
+  }
+}
