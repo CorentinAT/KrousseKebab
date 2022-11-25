@@ -1,0 +1,7 @@
+<select id="supp" name="supp">
+                    <option value="Curry"> Curry</option>
+                    <option value="Blanche"> Blanche</option>
+                    <option value="Algérienne"> Algérienne</option>
+                    <option value="Ketchup"> Ketchup</option>
+                    <option value="Barbecue"> Barbecue</option>
+                    <option value="Mayonnaise"> Mayonnaise</option> 

@@ -1,0 +1,45 @@
+.menu{
+    
+    background-color: #4E1D02;
+    color: white;
+    text-decoration: none;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+}
+
+.formulaire{
+    display: grid;
+    grid-column: auto;
+    align-items: center;
+}
+
+champ{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+}
+
+c{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+                         
+    
+}
+
+@media (max-width: 700px) {
+
+}
+
+
+@media (min-width: 701px) {
+    
+
+    div{
+        display: flex;
+        justify-content:space-around;
+    }
+}
