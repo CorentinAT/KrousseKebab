@@ -23,12 +23,16 @@
   margin-top: 50px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
+.menu div:not(:first-child) {
   margin-top: 50px;
   width: 500px;
   text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
 .commander {
@@ -89,6 +93,11 @@ h3 {
 .quinous a {
   text-decoration: underline;
   color: black;
+  transition: opacity 0.4s;
+}
+
+.quinous a:hover {
+  opacity: 60%;
 }
 
 .crous {
@@ -122,16 +131,19 @@ h3 {
   .proposition-contenu {
     flex-direction: column;
   }
-  .menu a {
-    font-size: 30px;
-  }
 }
 
 @media (min-width: 701px) {
   .menus, .sauces, .boissons {
     width: 30%;
   }
-  .menu a {
-    font-size: 50px;
+  .menu {
+    align-items: center;
+  }
+  .menu div {
+    transition: transform 0.5s;
+  }
+  .menu div:hover {
+    transform: scale(1.1);
   }
 }
