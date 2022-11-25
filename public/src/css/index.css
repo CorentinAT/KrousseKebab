@@ -26,31 +26,31 @@ h3 {
   margin-bottom: 20px;
 }
 
-.menu {
+.menu-accueil {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 50px;
 }
 
-.menu div:not(:first-child) {
+.menu-accueil div:not(:first-child) {
   margin-top: 50px;
   width: 500px;
   text-align: center;
 }
 
-.menu a {
+.menu-accueil a {
   text-decoration: none;
   color: black;
   font-size: 30px;
 }
 
-.commander {
+.commander-accueil {
   text-align: center;
   width: 100%;
 }
 
-.commander a {
+.commander-accueil a {
   border: solid;
   border-color: #4E1D02;
   border-radius: 10px;
@@ -134,16 +134,16 @@ hr {
 }
 
 @media (min-width: 701px) {
-  .menu {
+  .menu-accueil {
     align-items: center;
   }
   .menus, .sauces, .boissons {
     width: 30%;
   }
-  .menu div {
+  .menu-accueil div {
     transition: transform 0.5s;
   }
-  .menu div:hover {
+  .menu-accueil div:hover {
     transform: scale(1.1);
   }
 }
