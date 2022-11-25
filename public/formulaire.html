@@ -15,8 +15,6 @@
     <header>
       <h1><a href="index.html">Kebab l'Istanbul</a></h1>
     </header>
-    <body>
-        <form>
         <div class="menu">
             <a href="">Commander</a>
             <a href="index.html#quinous">Qui nous sommes</a>
@@ -25,7 +23,7 @@
           </div>
         <form>
             <h2 class="commande">Commande</h2>
-            <section>
+            <section class="menus">
                 <h3>Type de menu</h3>
                 <div class="choix">
                     <input type="radio" id="seul" name="menu">
@@ -41,23 +39,25 @@
                 </div>
             </section>
 
-            <section>
-                <h3>Taille</h3>
+            <section class="taille">
+                <h3 class="ttt">Taille</h3>
                 <div class="choix">
                     <input type="radio" id="tailles" name="taille">
-                    <label for="tailles">S</label>
+                    <label for="tailles"><strong>S</strong></label>
                 </div>
                 <div class="choix">
                     <input type="radio" id="taillem" name="taille">
-                    <label for="taillem">M (+2€)</label>
+                    <label for="taillem"><strong>M</strong></label>
+                    <span>(+2€)</span>
                 </div>
                 <div class="choix">
                     <input type="radio" id="taillel" name="taille">
-                    <label for="taillel">L (+3€)</label>
+                    <label for="taillel"><strong>L</strong></label>
+                    <span>(+3€)</span>
                 </div>
             </section>
 
-            <section>
+            <section class="sauce">
                 <h3>Sauce</h3>
                 <div class="choix">
                     <input type="radio" id="curry" name="sauce">
@@ -65,31 +65,27 @@
                 </div>
                 <div class="choix">
                     <input type="radio" id="blanche" name="sauce">
-                    <label for="blanche">Blanche</label>
+                    <label for="blanche"><img src="src/img/blanche.png">Blanche</label>
                 </div>
                 <div class="choix">
                     <input type="radio" id="alge" name="sauce">
-                    <label for="alge">Algérienne</label>
+                    <label for="alge"><img src="src/img/algerienne.png">Algérienne</label>
                 </div>
                 <div class="choix">
                     <input type="radio" id="ketchup" name="sauce">
-                    <label for="ketchup">Ketchup</label>
+                    <label for="ketchup"><img src="src/img/ketchup.png">Ketchup</label>
                 </div>
                 <div class="choix">
                     <input type="radio" id="bbc" name="sauce">
-                    <label for="bbc">Barbecue</label>
+                    <label for="bbc"><img src="src/img/bbc.png">Barbecue</label>
                 </div>
                 <div class="choix">
                     <input type="radio" id="mayo" name="sauce">
-                    <label for="mayo">Mayonnaise</label>
-                </div>
-                <div class="choix">
-                    <input type="radio" id="passauce" name="sauce">
-                    <label for="passauce">Sans sauce</label>
+                    <label for="mayo"><img src="src/img/mayo.png">Mayonnaise</label>
                 </div>
             </section>
 
-            <section>
+            <section class="base">
                 <h3>Aliments de base</h3>
                 <div class="choix">
                     <input type="checkbox" id="viandebase" name="base" checked>
@@ -109,7 +105,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="supp">
                 <h3>Suppléments (+0,50€)</h3>
                 <div class="choix">
                     <input type="checkbox" id="viandesupp" name="supp">
@@ -129,19 +125,20 @@
                 </div>
                 <div class="choix">
                     <input type="checkbox" id="saucesupp" name="supp">
-                    <label for="saucesupp">Sauce</label>
+                    <label for="saucesupp">Sauce
                     <select id="saucesuppchoix" name="supp">
+                        <option value="aucune">Choisir une sauce</option>
                         <option value="Curry"> Curry</option>
                         <option value="Blanche"> Blanche</option>
                         <option value="Algérienne"> Algérienne</option>
                         <option value="Ketchup"> Ketchup</option>
                         <option value="Barbecue"> Barbecue</option>
                         <option value="Mayonnaise"> Mayonnaise</option>
-                    </select>
+                    </select></label>
                 </div>
             </section>
 
-            <section>
+            <section class="regime">
                 <h3>Régime particulier</h3>
                 <select id="regime" name="regime" class="choix">
                     <option value="aucun">Aucun</option>
@@ -151,7 +148,7 @@
                 </select>
             </section>
 
-            <section>
+            <section class="surplace">
                 <h3>Mangez-vous sur place?</h3>
                 <div class="choix">
                     <input type="radio" id="ouiplace" name="surplace">
@@ -162,10 +159,7 @@
                     <label for="nonplace">Non</label>
                 </div>
             </section>
-
-            <div class="commander">
-                <a href="formulaire.html#commande">Commander</a>
-            </div>
+            <input type="submit" class="commander" value="Commander">
         </form>
         
         <footer id="footer">
