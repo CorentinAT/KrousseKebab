@@ -140,10 +140,10 @@ h3 {
   .menu {
     align-items: center;
   }
-  .menu a {
-    transition: color 0.5s;
+  .menu div {
+    transition: transform 0.5s;
   }
-  .menu a:hover {
-    color: #a23900;
+  .menu div:hover {
+    transform: scale(1.1);
   }
 }
