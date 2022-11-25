@@ -141,9 +141,9 @@ h3 {
     align-items: center;
   }
   .menu a {
-    transition: font-size 0.5s;
+    transition: color 0.5s;
   }
   .menu a:hover {
-    font-size: 35px;
+    color: #a23900;
   }
 }
