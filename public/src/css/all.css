@@ -22,6 +22,11 @@ header, footer {
   padding: 5px;
 }
 
+header hr {
+  color: white;
+  size: 2px;
+}
+
 footer div {
   display: flex;
   flex-wrap: nowrap;
