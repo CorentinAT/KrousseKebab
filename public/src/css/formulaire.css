@@ -1,10 +1,19 @@
 .menu{
+    margin-top: 2px;
     background-color: #4E1D02;
     color: white;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+}
+
+.menu a {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .formulaire{
@@ -46,5 +55,14 @@ a{
     div{
         display: flex;
         justify-content:space-around;
+    }
+    .menu a {
+        width: 25%;
+    }
+    .menu a {
+        transition: font-size 0.4s;
+    }
+    .menu a:hover {
+        font-size: 17px;
     }
 }
