@@ -30,11 +30,6 @@
   width: 500px;
   text-align: center;
   font-size: 30px;
-  transition: font-size 0.5s;
-}
-
-.menu a:hover {
-  font-size: 35px;
 }
 
 .commander {
@@ -138,5 +133,15 @@ h3 {
 @media (min-width: 701px) {
   .menus, .sauces, .boissons {
     width: 30%;
+  }
+  .menu {
+    align-items: center;
+  }
+  .menu a {
+    transition: font-size 0.5s;
+    height: 10%;
+  }
+  .menu a:hover {
+    font-size: 35px;
   }
 }
