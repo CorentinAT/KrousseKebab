@@ -1,3 +1,13 @@
+p, li, h3 {
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
 .banniere {
   background-color: #4E1D02;
   margin-top: 2px;
@@ -80,16 +90,6 @@ hr {
   text-align: justify;
 }
 
-p, li, h3 {
-  font-size: 20px;
-}
-
-h3 {
-  font-weight: normal;
-  text-decoration: underline;
-  font-size: 24px;
-}
-
 .quinous a {
   text-decoration: underline;
   color: black;
@@ -134,11 +134,11 @@ h3 {
 }
 
 @media (min-width: 701px) {
-  .menus, .sauces, .boissons {
-    width: 30%;
-  }
   .menu {
     align-items: center;
+  }
+  .menus, .sauces, .boissons {
+    width: 30%;
   }
   .menu div {
     transition: transform 0.5s;

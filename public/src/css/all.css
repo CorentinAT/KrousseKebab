@@ -34,12 +34,12 @@ footer div {
 }
 
 @media (min-width: 701px) {
+  footer {
+    text-align: center;
+  }
   footer div {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-  }
-  footer {
-    text-align: center;
   }
 }

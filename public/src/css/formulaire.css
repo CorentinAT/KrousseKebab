@@ -1,3 +1,17 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+strong {
+    font-size: 30px;;
+}
+
+hr {
+    color: white;
+    size: 2px;
+}
+
 .menu{
     margin-top: 2px;
     background-color: #4E1D02;
@@ -20,17 +34,12 @@ form {
     flex-direction: column;
 }
 
-hr {
-    color: white;
-    size: 2px;
-}
-
 .commande {
     margin-top: 10px;
     margin-left: 5%;
 }
 
-section, .commander {
+.commander, section {
     margin-top: 20px;
 }
 
@@ -42,20 +51,22 @@ section {
     margin-bottom: 10px;
 }
 
-section>*:not(h3) {
-    margin-left: 20px;
-}
-
 section h3 {
     width: 100%;
+}
+
+section>*:not(h3) {
+    margin-left: 20px;
 }
 
 .choix {
     margin-top: 5px;
 }
 
-strong {
-    font-size: 30px;;
+.taille label {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
 }
 
 .sauce input, .taille input {
@@ -83,16 +94,6 @@ strong {
     height: 80px;
 }
 
-.supp select {
-    margin-left: 3px;
-}
-
-.taille label {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 3px;
-}
-
 .sauce img {
     width: 60px;
 }
@@ -110,11 +111,10 @@ strong {
     display: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.supp select {
+    margin-left: 3px;
 }
-  
+
 .commander {
     align-self: center;
     text-align: center;
@@ -137,11 +137,11 @@ a{
     .menu a {
         width: 50%;
     }
-    section:not(.taille):not(.sauce) {
-        flex-direction: column;
-    }
     .sauce, .taille {
         justify-content: center;
+    }
+    section:not(.taille):not(.sauce) {
+        flex-direction: column;
     }
 }
 
@@ -151,8 +151,6 @@ a{
     }
     .menu a {
         width: 25%;
-    }
-    .menu a {
         transition: transform 0.4s;
     }
     .menu a:hover {
