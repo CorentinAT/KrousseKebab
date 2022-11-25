@@ -26,23 +26,25 @@
             <h2 id="commande">Commande</h2>
 
             <champ>
-                <label for="menu"> <h3>Type de menu</h3> </label>
                 <b1 class = "typemenu" >
+                <label for="menu"> <h3>Type de menu</h3> </label>
+                
                 <div >
-                <c><input type="radio" id="menu" name="menu"> <p>Kebab (5€)</p></c>
-                <c><input type="radio" id="menu" name="menu"> <p>Kebab + boisson (6€)</p></c>
-                <c><input type="radio" id="menu" name="menu"> <p>Kebab + boisson + frites (7,50€)</p></c>
+                <c><input type="radio" id="menu" name="menu"> <label for="menu">Kebab (5€)</label></c>
+                <c><input type="radio" id="menu" name="menu"> <label for="menu">Kebab + boisson (6€)</label></c>
+                <c><input type="radio" id="menu" name="menu"> <label for="menu">Kebab + boisson + frites (7,50€)</label></c>
                 </div>
                 </b1>
             </champ>
 
             <champ>
+                <b1 class = "taillemenu">
                 <label for="taille"> <h3>Taille</h3> </label>
-                <b1 id = "taillemenu">
+                
                 <div >
-                <c><input type="radio" id="taille" name="taille"> <p>S</p></c>
-                <c><input type="radio" id="taille" name="taille"> <p>M (+2€)</p></c>
-                <c><input type="radio" id="taille" name="taille"> <p>L (+3€)</p></c>
+                <c><input type="radio" id="taille" name="taille"> <label for="taille">S</label></c>
+                <c><input type="radio" id="taille" name="taille"> <label for="taille">M (+2€)</label></c>
+                <c><input type="radio" id="taille" name="taille"> <label for="taille">L (+3€)</label></c>
                 </div></b1>
             </champ>
 
@@ -50,13 +52,13 @@
                 <label for="sauce"> <h3>Sauce</h3> </label>
                 <b1 id = "choixsauce"> 
                 <div>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Curry</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Blanche</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Algérienne</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Ketchup</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Barbecue</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Mayonnaise</p></c>
-                <c><input type="radio" id="sauce" name="sauce"> <p>Sans sauce</p></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Curry</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Blanche</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Algérienne</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Ketchup</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Barbecue</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Mayonnaise</label></c>
+                <c><input type="radio" id="sauce" name="sauce"> <label for="sauce">Sans sauce</label></c>
                 </div></b1>
             </champ>
 
@@ -64,10 +66,10 @@
                 <label for="base"> <h3>Aliments de base</h3> </label>
                 <b1 id = "choixbase">
                 <div >
-                <c><input type="checkbox" id="base" name="base"> <p>Viande</p></c>
-                <c><input type="checkbox" id="base" name="base"> <p>Tomates</p></c>
-                <c><input type="checkbox" id="base" name="base"> <p>Salade</p></c>
-                <c><input type="checkbox" id="base" name="base"> <p>Oignons</p></c>
+                <c><input type="checkbox" id="base" name="base" checked> <label for="base">Viande</label></c>
+                <c><input type="checkbox" id="base" name="base"checked> <label for="base">Tomates</label></c>
+                <c><input type="checkbox" id="base" name="base"checked> <label for="base">Salade</label></c>
+                <c><input type="checkbox" id="base" name="base"checked> <label for="base">Oignons</label></c>
                 </div></b1>
             </champ>
 
@@ -75,12 +77,20 @@
                 <label for="supp"> <h3>Suppléments (+0,50€)</h3> </label>
                 <b1 id = "choixsupp">
                 <div >
-                <c><input type="checkbox" id="supp" name="supp"> <p>Viande</p></c>
-                <c><input type="checkbox" id="supp" name="supp"> <p>Tomates</p></c>
-                <c><input type="checkbox" id="supp" name="supp"> <p>Salade</p></c>
-                <c><input type="checkbox" id="supp" name="supp"> <p>Oignons</p></c>
-                <c><input type="checkbox" id="supp" name="supp"> <p>Sauce :</p></c>
-                <c></c>
+                <c><input type="checkbox" id="supp" name="supp"> <label for="supp">Viande</label></c>
+                <c><input type="checkbox" id="supp" name="supp"> <label for="supp">Tomates</label></c>
+                <c><input type="checkbox" id="supp" name="supp"> <label for="supp">Salade</label></c>
+                <c><input type="checkbox" id="supp" name="supp"> <label for="supp">Oignons</label></c>
+                <c><input type="checkbox" id="supp" name="supp"> <label for="supp">Sauce :</label></c>
+                <c class="deroule">
+                <select id="supp" name="supp">
+                    <option value="Curry"> Curry</option>
+                    <option value="Blanche"> Blanche</option>
+                    <option value="Algérienne"> Algérienne</option>
+                    <option value="Ketchup"> Ketchup</option>
+                    <option value="Barbecue"> Barbecue</option>
+                    <option value="Mayonnaise"> Mayonnaise</option>
+                </select> </c>
                 </div></b1>
             </champ>
 
@@ -88,10 +98,11 @@
             <champ id = "msg">
                 
                 <label for="msg"> <h3>Régime particulier</h3> </label>
-                <c><select id="supp" name="supp">
+                <c class="deroule"><select id="supp" name="supp">
                     <option value="vege"> Végétarien </option>
                     <option value="vega"> Végane</option>
                     <option value="sansglu"> Sans gluten</option>
+                    </select>
                 </c>
             </champ>
 
@@ -99,35 +110,14 @@
             <champ>
                 <label for="surplace"> <h3>Mangez-vous sur place?</h3> </label>
                 <div id = "choixplac">
-                <input type="radio" id="surplace" name="surplace"> <p>Oui</p>
-                <input type="radio" id="surplace" name="surplace"> <p>Non</p>
+                <c><input type="radio" id="surplace" name="surplace"> <label for="">Oui</label></c>
+                <c><input type="radio" id="surplace" name="surplace"> <label for="">Non</label></c>
                 </div>
             </champ>
 
             <div class="commander">
                 <a href="formulaire.html#commande">Commander</a>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </section>
         
