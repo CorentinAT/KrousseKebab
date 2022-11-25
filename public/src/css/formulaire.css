@@ -15,8 +15,7 @@
     margin-bottom: 2px;
 }
 
-.formulaire{
-
+.form {
     display: flex;
     flex-direction: column;
 
@@ -31,41 +30,32 @@ hr {
     size: 2px;
 }
 
-champ{
+section{
     display: flex;
-    flex-direction: column;
-    /*justify-content : center;*/
-    grid-area: 1/2;
-    margin-left: 200px;
-    margin-right: 200px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#commande{
-    /*display: flex;*/
+
+section>*:not(h3) {
+    margin-left: 20px;
+}
+
+section h3 {
+    width: 100%;
+}
+
+.choix {
+    margin-top: 5px;
+}
+
+.commande {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 5%;
 }
-
-.taillemenu{
-    grid-area: 2/1/3/2;
-}
-
-
-
-
-c{
-    /*display: flex;*/
-    margin-right: 10px;
-}
-
-/*.deroule{
-    display: flex;
-    flex-direction:row;
-}*/
-
 
 a{
     text-decoration: none;
@@ -82,10 +72,6 @@ a{
 }
 
 @media (min-width: 701px) {
-    div{
-        /*display: flex;
-        justify-content:space-around;*/
-    }
     .menu {
         height: 30px;
     }
