@@ -23,12 +23,15 @@
   margin-top: 50px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
+.menu div:not(:first-child) {
   margin-top: 50px;
   width: 500px;
   text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
   font-size: 30px;
 }
 
@@ -139,7 +142,6 @@ h3 {
   }
   .menu a {
     transition: font-size 0.5s;
-    height: 10%;
   }
   .menu a:hover {
     font-size: 35px;
