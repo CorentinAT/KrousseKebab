@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+hr {
+    color: white;
+    size: 2px;
+}
+
 champ{
     display: flex;
     flex-direction: column;
@@ -26,18 +31,18 @@ c{
 a{
     text-decoration: none;
     color: white;
-                         
-    
 }
 
 @media (max-width: 700px) {
-
+    .menu {
+        flex-wrap: wrap;
+    }
+    .menu a {
+        width: 50%;
+    }
 }
 
-
 @media (min-width: 701px) {
-    
-
     div{
         display: flex;
         justify-content:space-around;
