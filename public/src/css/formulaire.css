@@ -25,6 +25,11 @@ hr {
     size: 2px;
 }
 
+h2 {
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
 section, .commander {
     margin-top: 20px;
 }
@@ -123,12 +128,7 @@ a{
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 17px;
-    transition: transform 0.3s;
   }
-
-.commander:hover {
-    transform: scale(1.1);
-}
 
 @media (max-width: 700px) {
     .menu {
@@ -156,6 +156,12 @@ a{
         transition: transform 0.4s;
     }
     .menu a:hover {
+        transform: scale(1.1);
+    }
+    .commander {
+        transition: transform 0.3s;
+    }
+    .commander:hover {
         transform: scale(1.1);
     }
 }
