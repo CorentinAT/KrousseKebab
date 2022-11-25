@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="GitLab Pages">
+    <title>Kebab</title>
+    <link rel="stylesheet" href="src/css/all.css">
+    <link rel="stylesheet" href="src/css/formulaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Kebab l'Istanbul</a></h1>
+    </header>
+        <div class="menu">
+            <a href="">Commander</a>
+            <a href="index.html#quinous">Qui nous sommes</a>
+            <a href="index.html#proposition">Notre proposition</a>
+            <a href="index.html#contact">Nous contacter</a>
+          </div>
+        <form>
+            <h2 class="commande">Commande</h2>
+            <section class="menus">
+                <h3>Type de menu</h3>
+                <div class="choix">
+                    <input type="radio" id="seul" name="menu">
+                    <label for="seul">Kebab (5€)</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="keboiss" name="menu">
+                    <label for="keboiss">Kebab + boisson (6€)</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="keboissfri" name="menu">
+                    <label for="keboissfri">Kebab + boisson + frites (7,50€)</label>
+                </div>
+            </section>
+
+            <section class="taille">
+                <h3 class="ttt">Taille</h3>
+                <div class="choix">
+                    <input type="radio" id="tailles" name="taille">
+                    <label for="tailles"><strong>S</strong></label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="taillem" name="taille">
+                    <label for="taillem"><strong>M</strong></label>
+                    <span>(+2€)</span>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="taillel" name="taille">
+                    <label for="taillel"><strong>L</strong></label>
+                    <span>(+3€)</span>
+                </div>
+            </section>
+
+            <section class="sauce">
+                <h3>Sauce</h3>
+                <div class="choix">
+                    <input type="radio" id="curry" name="sauce">
+                    <label for="curry"><img src="src/img/curry.png">Curry</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="blanche" name="sauce">
+                    <label for="blanche"><img src="src/img/blanche.png">Blanche</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="alge" name="sauce">
+                    <label for="alge"><img src="src/img/algerienne.png">Algérienne</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="ketchup" name="sauce">
+                    <label for="ketchup"><img src="src/img/ketchup.png">Ketchup</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="bbc" name="sauce">
+                    <label for="bbc"><img src="src/img/bbc.png">Barbecue</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="mayo" name="sauce">
+                    <label for="mayo"><img src="src/img/mayo.png">Mayonnaise</label>
+                </div>
+            </section>
+
+            <section class="base">
+                <h3>Aliments de base</h3>
+                <div class="choix">
+                    <input type="checkbox" id="viandebase" name="base" checked>
+                    <label for="viandebase">Viande</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="tomatebase" name="base"checked>
+                    <label for="tomatebase">Tomate</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="saladebase" name="base"checked>
+                    <label for="saladebase">Salade</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="oignonbase" name="base"checked>
+                    <label for="oignonbase">Oignon</label>
+                </div>
+            </section>
+
+            <section class="supp">
+                <h3>Suppléments (+0,50€)</h3>
+                <div class="choix">
+                    <input type="checkbox" id="viandesupp" name="supp">
+                    <label for="viandesupp">Viande</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="tomatesupp" name="supp">
+                    <label for="tomatesupp">Tomate</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="saladesupp" name="supp">
+                    <label for="saladesupp">Salade</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="oignonsupp" name="supp">
+                    <label for="oignonsupp">Oignons</label>
+                </div>
+                <div class="choix">
+                    <input type="checkbox" id="saucesupp" name="supp">
+                    <label for="saucesupp">Sauce
+                    <select id="saucesuppchoix" name="supp">
+                        <option value="aucune">Choisir une sauce</option>
+                        <option value="Curry"> Curry</option>
+                        <option value="Blanche"> Blanche</option>
+                        <option value="Algérienne"> Algérienne</option>
+                        <option value="Ketchup"> Ketchup</option>
+                        <option value="Barbecue"> Barbecue</option>
+                        <option value="Mayonnaise"> Mayonnaise</option>
+                    </select></label>
+                </div>
+            </section>
+
+            <section class="regime">
+                <h3>Régime particulier</h3>
+                <select id="regime" name="regime" class="choix">
+                    <option value="aucun">Aucun</option>
+                    <option value="vege"> Végétarien </option>
+                    <option value="vega"> Végane</option>
+                    <option value="sansglu"> Sans gluten</option>
+                </select>
+            </section>
+
+            <section class="surplace">
+                <h3>Mangez-vous sur place?</h3>
+                <div class="choix">
+                    <input type="radio" id="ouiplace" name="surplace">
+                    <label for="ouiplace">Oui</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" id="nonplace" name="surplace">
+                    <label for="nonplace">Non</label>
+                </div>
+            </section>
+            <input type="submit" class="commander" value="Commander">
+        </form>
+        
+        <footer id="footer">
+            <h2>Nous contacter</h2>
+            <div class="contact">
+                <span>Tél : 01 23 45 67 89</span>
+                <span>Adresse : 1 rue de la Science</span>
+                <span>Mail : crous@univ.fr</span> 
+            </div>
+        </footer>
+    </body>
+</html>
