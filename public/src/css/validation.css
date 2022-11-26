@@ -1,0 +1,27 @@
+.contenu {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contenu h2 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p:not(:first-child), div {
+    margin-top: 15px;
+}
+
+strong {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
