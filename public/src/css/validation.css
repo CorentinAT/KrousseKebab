@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-p:not(:first-child), div {
+.contenu p:not(:first-child), .contenu div {
     margin-top: 15px;
 }
 
