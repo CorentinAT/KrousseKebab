@@ -26,7 +26,7 @@
             <section class="menus">
                 <h3>Type de menu</h3>
                 <div class="choix">
-                    <input type="radio" id="seul" name="menu">
+                    <input type="radio" id="seul" name="menu" required>
                     <label for="seul">Kebab (5€)</label>
                 </div>
                 <div class="choix">
@@ -42,7 +42,7 @@
             <section class="taille">
                 <h3 class="ttt">Taille</h3>
                 <div class="choix">
-                    <input type="radio" id="tailles" name="taille">
+                    <input type="radio" id="tailles" name="taille" required>
                     <label for="tailles"><strong>S</strong></label>
                 </div>
                 <div class="choix">
@@ -60,7 +60,7 @@
             <section class="sauce">
                 <h3>Sauce</h3>
                 <div class="choix">
-                    <input type="radio" id="curry" name="sauce">
+                    <input type="radio" id="curry" name="sauce" required>
                     <label for="curry"><img src="src/img/curry.png" alt="Sauce curry">Curry</label>
                 </div>
                 <div class="choix">
@@ -140,18 +140,13 @@
 
             <section class="regime">
                 <h3>Régime particulier</h3>
-                <select id="regime" name="regime" class="choix">
-                    <option value="aucun">Aucun</option>
-                    <option value="vege"> Végétarien </option>
-                    <option value="vega"> Végane</option>
-                    <option value="sansglu"> Sans gluten</option>
-                </select>
+                <input type="text" placeholder="Halal, végan...">
             </section>
 
             <section class="surplace">
-                <h3>Mangez-vous sur place?</h3>
+                <h3>Mangez-vous sur place ?</h3>
                 <div class="choix">
-                    <input type="radio" id="ouiplace" name="surplace">
+                    <input type="radio" id="ouiplace" name="surplace" required>
                     <label for="ouiplace">Oui</label>
                 </div>
                 <div class="choix">

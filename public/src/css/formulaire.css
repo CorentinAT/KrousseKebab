@@ -59,7 +59,7 @@ section>*:not(h3) {
     margin-left: 20px;
 }
 
-.choix {
+.choix, input[type='text'] {
     margin-top: 5px;
 }
 
