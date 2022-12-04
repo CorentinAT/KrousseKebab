@@ -102,7 +102,7 @@ section>*:not(h3) {
     background-color: #cca38d;
 }
 
-.sauce input:checked ~ select, .taille input:checked ~ select {
+.sauce input:checked + label, .taille input:checked + label {
     background-color: #4E1D02;
     color: white;
 }
