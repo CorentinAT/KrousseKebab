@@ -75,6 +75,9 @@ footer div {
   footer {
     text-align: center;
   }
+  footer span {
+    width:30%;
+  }
   footer div {
     justify-content: space-around;
     margin-left: auto;
