@@ -102,10 +102,29 @@ hr {
 
 .crous {
   width: 250px;
+  align-self: center;
 }
 
 .crous img {
   width: 100%;
+}
+
+.quinous h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quinous table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.quinous td {
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  border: solid;
 }
 
 .proposition {
