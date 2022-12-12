@@ -107,12 +107,16 @@ section>*:not(h3) {
     color: white;
 }
 
-#saucesupp:not(:checked) ~ select {
+#saucesupp:not(:checked) ~ select, #saucesupp:not(:checked) ~ label[for="saucesuppchoix"] {
     display: none;
 }
 
 .supp select {
     margin-left: 3px;
+}
+
+.regime label {
+    display: none;
 }
 
 .commander {
