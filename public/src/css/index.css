@@ -121,7 +121,6 @@ hr {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .quinous td {
@@ -153,6 +152,9 @@ hr {
   .proposition-contenu {
     flex-direction: column;
   }
+  .quinous table {
+    width: 60%;
+  }
 }
 
 @media (min-width: 701px) {
@@ -167,5 +169,8 @@ hr {
   }
   .menu-accueil div:hover {
     transform: scale(1.1);
+  }
+  .quinous table {
+    width: 50%;
   }
 }
