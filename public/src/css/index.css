@@ -109,6 +109,14 @@ hr {
   width: 100%;
 }
 
+.quinous h3 {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .quinous table {
   border-collapse: collapse;
   margin-left: auto;
