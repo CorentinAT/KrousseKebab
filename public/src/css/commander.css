@@ -115,7 +115,7 @@ section>*:not(h3) {
     margin-left: 3px;
 }
 
-.regime label {
+.regime label, label[for="saucesuppchoix"] {
     display: none;
 }
 
