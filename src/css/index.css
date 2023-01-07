@@ -1,0 +1,176 @@
+p, li, h3 {
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.banniere {
+  background-color: #4E1D02;
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  height: 50%;
+  justify-content: space-around;
+  font-size: 500%;
+  align-items: center;
+}
+
+.banniere img {
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-accueil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.menu-accueil div:not(:first-child) {
+  margin-top: 50px;
+  width: 500px;
+  text-align: center;
+}
+
+.menu-accueil a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.commander-accueil {
+  text-align: center;
+  width: 100%;
+}
+
+.commander-accueil a {
+  border: solid;
+  border-color: #4E1D02;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFDBBA;
+  color: #4E1D02;
+  font-weight: bold;
+}
+
+hr {
+  color: #4E1D02;
+  height: 2px;
+  margin-top: 50px;
+}
+
+.contenu {
+  margin-top: 50px;
+}
+
+.quinous {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quinous .texte {
+  width: 700px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.quinous p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.quinous a {
+  text-decoration: underline;
+  color: black;
+  transition: opacity 0.4s;
+}
+
+.quinous a:hover {
+  opacity: 60%;
+}
+
+.crous {
+  width: 250px;
+  align-self: center;
+}
+
+.crous img {
+  width: 100%;
+}
+
+.quinous h3 {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quinous table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quinous td {
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  border: solid;
+}
+
+.proposition {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.proposition-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 15%;
+  text-align: left;
+}
+
+.menus, .sauces, .boissons {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .proposition-contenu {
+    flex-direction: column;
+  }
+  .quinous table {
+    width: 60%;
+  }
+}
+
+@media (min-width: 701px) {
+  .menu-accueil {
+    align-items: center;
+  }
+  .menus, .sauces, .boissons {
+    width: 30%;
+  }
+  .menu-accueil div {
+    transition: transform 0.5s;
+  }
+  .menu-accueil div:hover {
+    transform: scale(1.1);
+  }
+  .quinous table {
+    width: 50%;
+  }
+}

@@ -1,0 +1,179 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+strong {
+    font-size: 30px;;
+}
+
+hr {
+    color: white;
+    height: 2px;
+}
+
+.menu{
+    margin-top: 2px;
+    background-color: #4E1D02;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.menu a {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.commande {
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.commander, section {
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    width: 100%;
+}
+
+section>*:not(h3) {
+    margin-left: 20px;
+}
+
+.choix, input[type='text'] {
+    margin-top: 5px;
+}
+
+.taille label {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+}
+
+.sauce input, .taille input {
+    display:none;
+}
+
+.sauce :not(h3), .taille :not(h3) {
+    text-align: center;
+}
+
+.sauce label, .taille label {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-color: #4E1D02;
+    background-color: #FFDBBA;
+    transition: background-color 0.5s;
+}
+
+.sauce label {
+    width: 100px;
+    height: 80px;
+}
+
+.sauce img {
+    width: 60px;
+}
+
+.sauce label:hover, .taille label:hover {
+    background-color: #cca38d;
+}
+
+.sauce input:checked + label, .taille input:checked + label {
+    background-color: #4E1D02;
+    color: white;
+}
+
+#saucesupp:not(:checked) ~ select, #saucesupp:not(:checked) ~ label[for="saucesuppchoix"] {
+    display: none;
+}
+
+.supp select {
+    margin-left: 3px;
+}
+
+.regime label, label[for="saucesuppchoix"] {
+    display: none;
+}
+
+.commander {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.commander {
+    align-self: center;
+    text-align: center;
+    width: 140px;
+    border: solid;
+    border-color: #4E1D02;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FFDBBA;
+    color: #4E1D02;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+    .menu div {
+        width: 50%;
+    }
+    .sauce, .taille {
+        justify-content: center;
+    }
+    section:not(.taille):not(.sauce) {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 701px) {
+    .menu {
+        height: 30px;
+    }
+    .menu div {
+        width: 25%;
+    }
+
+    .menu a {
+        transition: transform 0.4s;
+    }
+
+    .menu a:hover {
+        transform: scale(1.1);
+    }
+    .commander {
+        transition: transform 0.3s;
+    }
+    .commander:hover {
+        transform: scale(1.1);
+    }
+}
