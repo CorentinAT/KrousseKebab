@@ -1,3 +1,3 @@
 # KrousseKebab
 
-Site web réalisé dans le cadre d'une SAé avec Cyprien BRUYERE.
+Site web réalisé avec Cyprien BRUYERE dans le cadre d'une SAé donnée en cours.
