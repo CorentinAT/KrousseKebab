@@ -2,4 +2,4 @@
 
 Site web réalisé avec Cyprien BRUYERE dans le cadre d'un projet donnée en cours, en utilisant uniquement du html et du css.
 
-https://corentinat.github.io/KrousseKebab/
+https://kroussekebab.super-sympa.fr/
